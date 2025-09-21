@@ -4,9 +4,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './src/script/index.js',
   
-  plugins: [ // Creates a basic HTML structure file with the bundled js in the script tag
-    new HtmlWebpackPlugin()
-  ],
+  new HtmlWebpackPlugin({
+      // Tell the plugin to use your new HTML file as a template
+      template: './src/index.html',
+    }),
   
   output: {
     filename: '[name].bundle.js',
