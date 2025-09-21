@@ -4,10 +4,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './src/script/index.js',
   
-  new HtmlWebpackPlugin({
-      // Tell the plugin to use your new HTML file as a template
-      template: './src/index.html',
+  // The plugins key is a required array
+  plugins: [
+    new HtmlWebpackPlugin({
+        // Tell the plugin to use your new HTML file as a template
+        template: './src/index.html',
     }),
+  ],
   
   output: {
     filename: '[name].bundle.js',
