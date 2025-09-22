@@ -1,4 +1,5 @@
-export function display(parentElement = 'body', newElement = 'p', content = 'New content', classes = []) {
+// Displaying content
+export function display(parentElement = 'body', newElement = 'p', content, classes = []) {
     const parent = document.querySelector(parentElement);
 
     if (!parent) {
@@ -7,7 +8,9 @@ export function display(parentElement = 'body', newElement = 'p', content = 'New
     }
 
     const child = document.createElement(newElement);
-    child.textContent = content;
+    if (content != undefined) {
+        child.textContent = content;
+    }    
 
     // Add classes using forEach and the classList property
     if (Array.isArray(classes) && classes.length > 0) {
@@ -19,6 +22,7 @@ export function display(parentElement = 'body', newElement = 'p', content = 'New
     // Append the new element to the parent
     parent.appendChild(child);
 }
+
 
 // Visual design of the site
 export function createLayout() {
