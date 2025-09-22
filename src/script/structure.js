@@ -1,4 +1,5 @@
 import { display } from './interface.js';
+import '../styles/structure.css';
 
 // Customize HTML template for current project
 const siteTitle = 'To-Do';
