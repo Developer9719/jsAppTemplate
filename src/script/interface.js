@@ -22,5 +22,5 @@ export function display(parentElement = 'body', newElement = 'p', content = 'New
 
 // Visual design of the site
 export function createLayout() {
-    alert("Hi from createLayoutFunction");
+    
 }
