@@ -19,3 +19,8 @@ export function display(parentElement = 'body', newElement = 'p', content = 'New
     // Append the new element to the parent
     parent.appendChild(child);
 }
+
+// Visual design of the site
+export function createLayout() {
+    alert("Hi from createLayoutFunction");
+}
