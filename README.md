@@ -1,3 +1,5 @@
+Update this repo so it uses the class from the to-do project to display the HTML
+
 # JS Template
 - Use as template in any repo
 - Clone new repo
