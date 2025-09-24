@@ -1,4 +1,4 @@
-#JS Template
+# JS Template
 - Use as template in any repo
 - Clone new repo
 - run npm install
