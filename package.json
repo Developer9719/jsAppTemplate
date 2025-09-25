@@ -1,7 +1,7 @@
 {
-  "name": "todolist",
+  "name": "jsapptemplate",
   "version": "1.0.0",
-  "description": "*** This is a breakpoint in the lessons, this will show everything I've learned (listed below) in action and I will come back to this for help with these topics in the future ***",
+  "description": "",
   "main": "./src/script/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Developer9719/todoList.git"
+    "url": "git+https://github.com/Developer9719/jsAppTemplate.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Developer9719/todoList/issues"
+    "url": "https://github.com/Developer9719/jsAppTemplate/issues"
   },
-  "homepage": "https://github.com/Developer9719/todoList#readme",
+  "homepage": "https://github.com/Developer9719/jsAppTemplate#readme",
   "devDependencies": {
     "webpack": "^5.101.3",
     "webpack-cli": "^6.0.1",
