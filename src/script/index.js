@@ -1,11 +1,11 @@
-import './pageLoad.js'; // Runs the IIFE
-import { htmlStructure } from './structure.js'; 
-import  { createLayout, interaction } from './interface.js';
-import { basicElementStructures } from './structure.js';
+import './pageLoad.js' // Runs the IIFE for intital setup for the site
+import  { customizedHTML } from './structure.js';
 
-htmlStructure(); // Setups up the basic structure
-createLayout(); // Create the customized layout
-interaction(); // Add user interaction 
+export let siteTitle = 'JS App Template';
+export let pageTitle = "Home";
 
-const createDiv = basicElementStructures.div('Testing Class. Class working for div at least'); // Dynamically creates element blueprint
-new basicElementStructures(createDiv, 'main'); // Creates the new element
+// Change the title element of the site
+document.querySelector('title').textContent = siteTitle + ' | ' + pageTitle;
+
+// Create the basic and customized page layout
+customizedHTML();
