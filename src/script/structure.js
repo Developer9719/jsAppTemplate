@@ -1,4 +1,5 @@
 import { siteTitle, pageTitle } from "./index.js";
+import { customizedHTML } from "customizedHTML.js";
 import '../styles/structure.css';
 
 // Basic Element Structure
@@ -110,6 +111,7 @@ export function customizedHTML() {
     new basicElementStructures(div, 'body');
 
     /* Customized Content */
+    customizedHTML();
 
     /* Basic Footer */
     content = `&copy 2025 - ${siteTitle}`;
